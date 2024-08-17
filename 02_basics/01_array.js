@@ -20,5 +20,15 @@ const newArr = myArr2.join()
 console.log("A", myArr2);
 const myn1 = myArr2.slice(1,3) //do not include last range
 const myn2 = myArr2.splice(1,3) // include last range manipulates original array
-console.log(myn1);
-console.log(myn2)
+// console.log(myn1);
+// console.log(myn2)
+
+const mycity =  ["Ayodhya", "Kashi","Prayagraj","Lucknow"]
+const mynewcity = ["Gurgaon","Delhi","Noida"]
+
+const myarrnew = [...mycity,...mynewcity] // spread operator
+console.log(myarrnew)
+
+const anotherarray = [1,2,3,[4,5,6],7,[6,9,[4,5,6]]]
+const usablearray = anotherarray.flat(Infinity)
+console.log(usablearray);
